@@ -1,0 +1,1 @@
+<link rel="icon" type="image/jpeg" href="/reddrop/pictures/Web_Logo.png" class="size">

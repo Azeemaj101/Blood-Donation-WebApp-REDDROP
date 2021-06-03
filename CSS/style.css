@@ -1,0 +1,412 @@
+body {
+    /* background-image: url(https://i.postimg.cc/9FmspFn3/1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; */
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 9px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-radius: 40px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(214, 47, 47);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.box {
+    width: 700px;
+    margin: 240px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.typed {
+    color: black;
+}
+
+.pic_size {
+    height: 440px;
+    opacity: 0.8;
+}
+
+.pic_size_1 {
+    height: 410px;
+    opacity: 0.8;
+}
+
+.pic_size_2 {
+    height: 210px;
+    width: 190px;
+    opacity: 0.9;
+    transition: transform 2.9s;
+}
+
+.pic_size_2:hover {
+    transform: scale(1.1);
+}
+
+.pic_size_3 {
+    height: 210px;
+    width: 190px;
+}
+
+#Head {
+    height: 20px;
+}
+
+@media screen and (max-width: 336px) {
+    #Head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper h2 {
+        font-size: 18px;
+        /* display: none; */
+    }
+    .box {
+        /* display: none; */
+        font-size: 18px;
+        /* font-family: lato;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px black; */
+    }
+}
+
+.zoom {
+    /* display: none; */
+    transition: transform 2.9s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.zoom_line {
+    /* display: none; */
+    transition: transform 2.9s;
+}
+
+.zoom_line:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 25px rgb(180, 107, 107);
+}
+
+.forgot a {
+    /* display: none; */
+    color: rgb(28, 108, 199);
+    transition: transform 2.9s;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    /* transform: scale(1.1); */
+    color: black;
+    text-decoration: underline;
+}
+
+.bg-ccc:hover {
+    box-shadow: 5px 5px 25px #ccc;
+}
+
+.blur {
+    opacity: .7;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.blur:hover {
+    opacity: 1;
+}
+
+.red-hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.red-hover a:hover {
+    color: rgb(206, 91, 91);
+}
+
+.footer-h {
+    font-size: 23px;
+}
+
+.red-hover {
+    line-height: 2.5;
+}
+
+.justify1 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.flip-card {
+    width: 200px;
+    height: 220px;
+    perspective: 800px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-frontside,
+.flip-card-backside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+.flip-card-backside {
+    background-color: rgb(3, 11, 44);
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    font-size: 12px;
+}
+
+.flip-card-backside h2 {
+    font-size: 20px;
+}
+
+.sm {
+    margin: 20px 0;
+}
+
+.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+    cursor: default;
+    text-decoration: none;
+}
+
+.sm a:hover {
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.btn_size {
+    font-size: 12px;
+}
+
+.btn_size1 {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.btn_size1:hover {
+    color: #000000;
+}
+
+.w_login {
+    width: 200px;
+    opacity: 0.8;
+}
+
+.w_login:hover {
+    opacity: 1;
+}
+
+.pic_logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 23px;
+}
+
+.pic_logo1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 63px;
+    opacity: 1;
+}
+
+.pic_logo2 {
+    height: 160px;
+    width: 160px;
+    border-radius: 83px;
+    opacity: 1;
+}
+
+.login_btn {
+    border: none;
+    opacity: 1;
+}
+
+.opacity_9 {
+    opacity: 0.9;
+}
+
+.opacity_7 {
+    opacity: 0.8;
+}
+
+.opacity_7:hover {
+    opacity: 1;
+}
+
+.F_Search {
+    width: 900px;
+    opacity: 0.9;
+}
+
+.S_size {
+    width: 500px;
+    height: 50px;
+}
+
+.table-w {
+    width: 1800px;
+}
+
+.cnav li {
+    padding: 0px 2px;
+}
+
+.cnav li a {
+    margin: 0px 3px;
+    color: rgb(0, 0, 0);
+    border-radius: 23px;
+}
+
+.cnav li a span {
+    padding: 10px 12px;
+    color: rgb(0, 0, 0);
+    border-radius: 23px;
+}
+
+.cnav li a span:hover {
+    padding: 10px 12px;
+    color: rgb(255, 255, 255);
+    border-radius: 23px;
+    font-weight: bold;
+}
+
+.cnav li a:hover {
+    background-color: rgb(240, 91, 46);
+    color: white;
+}
+
+.be::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border: 5px solid black;
+    border-width: 0 0 3px 3px;
+    /* border-radius: 8px; */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.be::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 5px solid black;
+    border-width: 3px 3px 0 0;
+    /* border-radius: 8px; */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.be:hover::after {
+    opacity: 1;
+    top: -1px;
+    border: 5px solid coral;
+    border-width: 3px 3px 0 0;
+    right: -1px;
+}
+
+.be:hover::before {
+    opacity: 1;
+    bottom: -1px;
+    border: 5px solid coral;
+    border-width: 0 0 3px 3px;
+    left: -1px;
+}
+
+.team1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("/reddrop/pictures/admin.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* display: flex; */
+}
+
+.F_Team {
+    text-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.H_Team {
+    text-shadow: 5px 5px 20px rgb(255, 255, 255);
+}
