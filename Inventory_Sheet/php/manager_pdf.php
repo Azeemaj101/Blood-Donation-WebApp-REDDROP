@@ -18,7 +18,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 date_default_timezone_set("Asia/Karachi");
                 while($row=mysqli_fetch_assoc($RUN)){
                     $i += 1;
-                    $diff = (int)date('Y-m-d') - (int)$row['DOB'];
                     $html.='<tr><td>'.$i.'</td><td>'.$row['NAME'].'</td><td>'.$row['USERNAME'].'</td><td>'.$row['PASSWORD'].'</td><td>'.$row['PIN_CODE'].'</td><td>'.$row['EMAIL'].'</td></tr>';
                 }
             $html.='</table><hr><br>Print Date Time:' . date('Y-m-d H:i');

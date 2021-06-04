@@ -14,7 +14,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         $RUN = mysqli_query($Connect_DB, $Que);
         
         if(mysqli_num_rows($RUN)>0){
-            $html='<hr>File Created By:' . strtoupper($_SESSION['username']).'<br><hr><style>table, th, td {border: 1px solid black;}table {width: 100%;}th {height: 70px;}td {text-align: center;}</style><table cellspacing="0px" cellpadding= "20px" height = "50px" width = "40px" border="4px">';
+            $html='<hr>File Created By:Admin<br><hr><style>table, th, td {border: 1px solid black;}table {width: 100%;}th {height: 70px;}td {text-align: center;}</style><table cellspacing="0px" cellpadding= "20px" height = "50px" width = "40px" border="4px">';
                 $html.='<tr><th>#SR</th><th>name</th><th>Username</th><th>Password</th><th>PIN</th><th>BLOOD_GROUP</th><th>AGE</th><th>CONTACT</th><th>GENDER</th><th>PROVINCE</th><th>CITY</th></tr>';
                 $i = 0;
                 date_default_timezone_set("Asia/Karachi");
@@ -34,7 +34,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         $html="Data not found";
     }
 
-    echo $html;
+    // echo $html;
     $mpdf = new \Mpdf\Mpdf();
     $mpdf->WriteHTML($html);
     $file = 'User'.time().'.pdf';
